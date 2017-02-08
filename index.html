@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="" class=logo__img>
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="search">
+                            <form action="" class="search__form">
+                                <input type="text" placeholder="Поиск" class="search__input">
+                                <input type="submit" value="" class="search__submit">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    <span class="menu__link-text">Карта проезда</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    <span class="menu__link-text">История заказов</span>
+                                </a>
+                            </li>
+                            <li class="menu__item menu__link-iconed">
+                                <a href="#" class="menu__link">
+                                    <span class="menu__link-icon">
+                                    <img src="img/buck.png" alt="bucket" class="menu__link-pic">
+                                    </span>
+                                    <span class="menu__link-text">Корзина</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <span class="nav__icon">
+                                	<svg xmlns="sipad" width="24" height="24" viewBox="0 0 24 24"><path d="M8.793 8.951c1.062-.757 2.542-.239 2.912 1-.655-.502-1.528-.482-2.2-.002-.677.482-.976 1.303-.716 2.082-1.05-.755-1.055-2.325.004-3.08zm3.164 10.8c.841.283 3.443 1.003 6.458 3.249l5.585-3.984c-1.448-2.031-1.05-3.452-2.489-5.471-.726-1.017-1.222-1.294-1.845-1.294-.22 0-.456.035-.724.084l.507.71c.306.428-.34.889-.646.46l-.452-.634c-.149-.21-.357-.281-.596-.281-.345 0-.753.148-1.141.237l.615.862c.304.428-.34.889-.646.46l-.533-.747c-.148-.208-.353-.28-.586-.28-.359 0-.787.17-1.186.271l.65.912c.306.429-.343.887-.646.46l-2.638-3.693c-.817-1.148-2.612.07-1.765 1.259l3.895 5.461c-.418-.154-1.152-.295-1.632-.295-1.481.003-2.051 1.628-.185 2.254zm-2.715-2.751h-6.242v-14h18v7.516c1.359.555 2.391 2.046 3 3.372v-10.888c0-1.104-.896-2-2-2h-20c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h6.825c-.111-.69.002-1.358.417-2z"/></svg>
+                                </span>
+                                <span class="nav__title">Планшеты</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <span class="nav__icon">
+                                <svg xmlns="mobile" width="24" height="24" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
+                                </span>
+                                <span class="nav__title">Мобильные устройства</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <span class="nav__icon">
+                                	<svg xmlns="pc" width="24" height="24" viewBox="0 0 24 24"><path d="M2 0v15h20v-15h-20zm18 13h-16v-11h16v11zm-6 3l1.599 2h-7.198l1.599-2h4zm-12 3v5h20v-5h-20zm9.5 3.1c-.332 0-.6-.269-.6-.6s.269-.6.6-.6.6.269.6.6-.268.6-.6.6zm8.5-.1h-6v-1h6v1z"/></svg>
+                                </span>
+                                <span class="nav__title">Персональные компьютеры</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <span class="nav__icon">
+                                	<svg xmlns="note" width="24" height="24" viewBox="0 0 24 24"><path d="M22 17v-11.8c0-.663-.537-1.2-1.2-1.2h-17.6c-.663 0-1.2.537-1.2 1.2v11.8h20zm-18-11h16v9h-16v-9zm20 12v.8c0 .663-.537 1.2-1.2 1.2h-21.6c-.663 0-1.2-.537-1.2-1.2v-.8h10c0 .276.224.5.5.5h3c.276 0 .5-.224.5-.5h10z"/></svg>
+                                </span>
+                                <span class="nav__title">Ноутбуки</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <span class="nav__icon">
+                                	<svg xmlns="accessories" width="24" height="24" viewBox="0 0 24 24"><path d="M2 12c.229-6.013 4.042-11 10-11s9.771 4.987 10 11h-2c-.256-4.918-3.539-8.031-8-8.022-4.461-.009-7.744 3.104-8 8.022h-2zm22 4.039c0-1.126-.913-2.039-2.039-2.039h-2.961v9h2.961c1.126 0 2.039-.913 2.039-2.039v-4.922zm-24 0c0-1.126.913-2.039 2.039-2.039h2.961v9h-2.961c-1.126 0-2.039-.913-2.039-2.039v-4.922z"/></svg>
+                                </span>
+                                <span class="nav__title">Аксессуары</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <span class="nav__icon">
+                                	<svg xmlns="home-tech" width="24" height="24" viewBox="0 0 24 24"><path d="M20 5v-4h-16v4h-4v14h2.764l2.001-4h14.472l2 4h2.763v-14h-4zm-14-2h12v2h-12v-2zm16 13.055l-1.527-3.055h-16.944l-1.529 3.056v-9.056h20v9.055zm-8-7.055h2v2h-2v-2zm3 0h2v2h-2v-2zm-12 0h7v2h-7v-2zm13 8l3 6h-18l3-6h2.203l-1.968 4h11.528l-1.956-4h2.193z"/></svg>
+                                </span>
+                                <span class="nav__title">Бытовая техника</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="tabs">
+            <div class="container">
+                <ul class="tab__list">
+                    <li class="tab__item">
+                        <a href="#" class="tabs__link">Главная</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tabs__link">Мобильные устройства</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tabs__link">Ноутбуки</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tabs__link">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section__title">
+            <div class="container">
+                <h1 class="title">Мобильные устройства</h1>
+            </div>
+        </section>
+        <section class="content__wrapper">
+            <div class="container">
+                <aside class="sidebar">
+                    <ul class="sidebar__categories">
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__icon">
+                            			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
+                            		</span>
+                                <span class="sidebar__text">Мобильные телефоны</span>
+                            </a>
+                            <div class="sidebar__mount">112</div>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__icon">
+                            	<svg xmlns="http://ipad" width="24" height="24" viewBox="0 0 24 24"><path d="M8.793 8.951c1.062-.757 2.542-.239 2.912 1-.655-.502-1.528-.482-2.2-.002-.677.482-.976 1.303-.716 2.082-1.05-.755-1.055-2.325.004-3.08zm3.164 10.8c.841.283 3.443 1.003 6.458 3.249l5.585-3.984c-1.448-2.031-1.05-3.452-2.489-5.471-.726-1.017-1.222-1.294-1.845-1.294-.22 0-.456.035-.724.084l.507.71c.306.428-.34.889-.646.46l-.452-.634c-.149-.21-.357-.281-.596-.281-.345 0-.753.148-1.141.237l.615.862c.304.428-.34.889-.646.46l-.533-.747c-.148-.208-.353-.28-.586-.28-.359 0-.787.17-1.186.271l.65.912c.306.429-.343.887-.646.46l-2.638-3.693c-.817-1.148-2.612.07-1.765 1.259l3.895 5.461c-.418-.154-1.152-.295-1.632-.295-1.481.003-2.051 1.628-.185 2.254zm-2.715-2.751h-6.242v-14h18v7.516c1.359.555 2.391 2.046 3 3.372v-10.888c0-1.104-.896-2-2-2h-20c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h6.825c-.111-.69.002-1.358.417-2z"/></svg>
+                            	</span>
+                                <span class="sidebar__text">Планшеты</span>
+                            </a>
+                            <div class="sidebar__mount">9</div>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <span class="sidebar__icon">
+                            	<svg xmlns="note" width="24" height="24" viewBox="0 0 24 24"><path d="M22 17v-11.8c0-.663-.537-1.2-1.2-1.2h-17.6c-.663 0-1.2.537-1.2 1.2v11.8h20zm-18-11h16v9h-16v-9zm20 12v.8c0 .663-.537 1.2-1.2 1.2h-21.6c-.663 0-1.2-.537-1.2-1.2v-.8h10c0 .276.224.5.5.5h3c.276 0 .5-.224.5-.5h10z"/></svg>
+                            </span>
+                                <span class="sidebar__text">Ноутбуки</span>
+                            </a>
+                            <div class="sidebar__mount">56</div>
+                        </li>
+                    </ul>
+                </aside>
+                <main class="content">
+                    <ul class="product">
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/i5-wh-pr.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min2.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min3.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        26500 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/i5-bl-pr.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-bl-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-bl-min2.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-bl-min3.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-bl-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        25000 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/ipad.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/ipad-wh-min-1.jpg" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/ipad-wh-min-2.jpg" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/ipad-wh-min-3.jpg" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/ipad-wh-4.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        4500 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/ipad-bl.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/ipad-bl-1.jpg" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/ipad-bl-2.jpg" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/ipad-bl-3.jpg" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/ipad-bl-4.jpg" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        4500 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/i5-wh-pr.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min2.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min3.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        4500 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/i5-wh-pr.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min2.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min3.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        4500 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/i5-wh-pr.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min2.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min3.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        4500 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product__item">
+                            <div class="product__slideshow">
+                                <div class="slideshow">
+                                    <div class="slideshow__display">
+                                        <img src="img/i5-wh-pr.png" alt="" class="slideshow__display-img">
+                                    </div>
+                                    <ul class="slideshow__prev">
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min2.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link"><img src="img/i5-wh-min3.png" alt="" class="slideshow__prev-img"></a>
+                                        </li>
+                                        <li class="slideshow__prev-item">
+                                            <a href="#" class="slideshow__prev-link">
+                                                <img src="img/i5-wh-min1.png" alt="" class="slideshow__prev-img">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__desc">
+                                <h2 class="product__desc-title">iPhone6s 128gb</h2>
+                                <div class="product__desc-content">
+                                    <ul>
+                                        <li>Диагональ дисплея (дюйм): 5.5;</li>
+                                        <li>Разрешение экрана (пиксели): 1020х1080;</li>
+                                        <li>Фотокамера (Mn): 12;</li>
+                                        <li>Процессор Apple A9 (+ копроцессор M9);</li>
+                                        <li>Встроенная память (Mb): 128000;</li>
+                                        <li>Вес (Гр): 113;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__price">
+                                <div class="product__price-inner">
+                                    <div class="product__price-value">
+                                        4500 грн
+                                    </div>
+                                    <a class="product__price-submit">
+                                	Купить</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </main>
+            </div>
+        </section>
+        <section class="pagination">
+            <div class="container">
+                <a href="#" class="pagination__control pagination__control-left"></a>
+                <ul class="pagination__list">
+                    <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">8</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">9</a></li>
+                </ul>
+                <a href="#" class="pagination__control pagination__control-right"></a>
+            </div>
+        </section>
+        <div class="empty"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__adress">
+                г. Киев, ул. Пимоненка13, БЦ "Арена"
+            </div>
+            <div class="footer__copyright">
+                mojn.ru 2017
+            </div>
+        </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
